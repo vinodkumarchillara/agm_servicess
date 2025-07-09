@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NDT Metallurgical Services</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-info-bar">
+    <div class="top-info-left">
+      <i class="fas fa-map-marker-alt"></i>
+      <a href="https://www.google.com/maps?q=25-13,+Kakatiya+Nagar,+Ramachandrapuram,+Hyderabad" target="_blank">
+        25-13, Kakatiya Nagar, Ramachandrapuram, Hyderabad
+      </a> |
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:agmservicesss@gmail.com">agmservicesss@gmail.com</a> |
+      <i class="fas fa-clock"></i> 9:00 AM to 7:00 PM
+    </div>
+    <div class="top-info-right">
+      <a href="https://www.linkedin.com/company/your-company-name" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/19KSoABdrX/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/agm_servicess_com_?igsh=c2Zwdm5tMW91MWpj" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/8977977054" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://twitter.com/your_twitter_handle" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- Header -->
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.jpg" alt="NDT Metallurgical Logo">
+    </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown-content">
+          <li><a href="ndt.html">NDT Insepection Services</a></li>
+          <li><a href="mechanical.html">Mechanical Services</a></li>
+          <li><a href="chemical.html">Chemical Analysis</a></li>
+          <li><a href="civil.html">Civil NDT</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+
+      <!-- ✅ New Button for Report Verification -->
+<li>
+  <a href="javascript:void(0)" onclick="openPopup()">Verify Report</a>
+</li>
+
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Hero Banner -->
+<section class="hero">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/ultra_sonic.jfif" alt="Slide 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/AAS.jpg" alt="Slide 2" />
+      </div>
+      <div class="swiper-slide">
+        <video autoplay muted loop playsinline>
+          <source src="images/landing_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <!-- Main Content -->
+  <section class="main-content">
+    <h2>Why Choose Us?</h2>
+    <p>
+      We specialize in non-destructive testing (NDT), failure analysis, and metallurgical evaluations. With a team of experienced professionals and state-of-the-art equipment, we deliver accurate and reliable results for your industrial needs.
+    </p>
+    <p>
+      Our commitment to quality, safety, and client satisfaction makes us a preferred partner for industries like manufacturing, oil & gas, construction, and more.
+    </p>
+  </section>
+
+  <section class="our-services">
+<h2>
+  <span style="color: #3c28a0; font-size: 24px; font-family: 'Poppins', sans-serif;">Our</span> 
+  <span style="color: #f37c00; font-size: 36px; font-family: 'Poppins', sans-serif;">Services</span>
+</h2>
+
+
+    <!-- Category Tabs -->
+    <section class="category-tabs-box">
+      <div class="category-tabs">
+        <button class="tab-btn active" data-category="ndt">NDT Inspection Services</button>
+        <button class="tab-btn" data-category="mechanical">Mechanical Services</button>
+        <button class="tab-btn" data-category="chemical">Chemical Analysis</button>
+        <button class="tab-btn" data-category="civil">Civil NDT</button>
+      </div>
+    </section>
+
+    <!-- Service Cards -->
+    <div class="services-grid">
+      <!-- NDT Services -->
+      <div class="service-card" data-category="ndt" style="background-image: url('images/ultra_sonic.jfif')">
+        <div class="overlay">
+          <span>Ultrasonic Testing</span>
+          <p>Uses high-frequency sound waves to detect internal flaws.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="service-card" data-category="ndt" style="background-image: url('images/visual_testing.jpg')">
+        <div class="overlay">
+          <span>Visual Testing</span>
+          <p>Surface-level inspection for cracks, corrosion, and more.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="service-card" data-category="ndt" style="background-image: url('images/pmi.jpg')">
+        <div class="overlay">
+          <span>PMI Testing</span>
+          <p>Verifies metal composition using XRF or OES technology.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="ndt" style="background-image: url('images/liquid_penet.jpg')">
+        <div class="overlay">
+          <span>Liquid Penetrant Testing (LPT/PT)</span>
+          <p>Liquid Penetrant Testing (LPT/PT) is a non-destructive testing method used to detect surface-breaking defects in non-porous materials using a dye or fluorescent penetrant.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+            <div class="service-card" data-category="ndt" style="background-image: url('images/Magnetic_particle.jpg')">
+        <div class="overlay">
+          <span>Magnetic Particle Testing (MPT/MT)</span>
+          <p>Magnetic Particle Testing (MPT/MT) is a non-destructive testing method used to detect surface and near-surface discontinuities in ferromagnetic materials by applying magnetic fields and ferrous particles.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+            <div class="service-card" data-category="ndt" style="background-image: url('images/Ultra\ Sonic\ Thickness\ Gauging.jpg')">
+        <div class="overlay">
+          <span>Ultra Sonic Thickness Gauging (UTG)</span>
+          <p>Ultrasonic Thickness Gauging (UTG) is a non-destructive testing method that uses high-frequency sound waves to measure the thickness of materials from one side, commonly used to assess corrosion or erosion.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Mechanical Services -->
+      <div class="service-card" data-category="mechanical" style="background-image: url('images/Tensile\ Testing.jpg')">
+        <div class="overlay">
+          <span>Tensile Testing</span>
+          <p>Measures the strength and ductility of materials under tension.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+            <div class="service-card" data-category="mechanical" style="background-image: url('images/DT\ Services.jpg')">
+        <div class="overlay">
+          <span>DT Services</span>
+          <p>Destructive Testing (DT) services in mechanical testing involve methods like tensile, impact, bend, and hardness tests to evaluate the mechanical properties and structural integrity of materials by subjecting them to conditions that lead to failure</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+            <div class="service-card" data-category="mechanical" style="background-image: url('images/Hardness\ Testing.jpg')">
+        <div class="overlay">
+          <span>Hardness Testing</span>
+          <p>Hardness Testing is a destructive or semi-destructive method used to measure a material's resistance to deformation, typically by indentation, using scales like Brinell, Rockwell, or Vickers.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+            <div class="service-card" data-category="mechanical" style="background-image: url('images/Bend\ Testing.jpg')">
+        <div class="overlay">
+          <span>Bend Testing</span>
+          <p>Bend Testing is a destructive mechanical test used to evaluate a material’s ductility, flexibility, and resistance to cracking by bending it to a specified angle or until failure.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+            <div class="service-card" data-category="mechanical" style="background-image: url('images/Proof\ Load\ Testing.jpg')">
+        <div class="overlay">
+          <span>Proof Load Testing</span>
+          <p>Proof Load Testing is a type of mechanical test where a structure or component is subjected to a specified load—usually higher than its normal working load—to verify its strength and structural integrity without causing permanent deformation or failure.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+            <div class="service-card" data-category="mechanical" style="background-image: url('images/Charpy\ Impact\ Testing.jpg')">
+        <div class="overlay">
+          <span>Charpy Impact Testing</span>
+          <p>Charpy Impact Testing is a destructive test method used to measure the amount of energy absorbed by a material during fracture at high velocity, indicating its toughness and resistance to sudden impact.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <!-- Chemical Analysis -->
+      <div class="service-card" data-category="chemical" style="background-image: url('images/AAS.jpg')">
+        <div class="overlay">
+          <span>AAS</span>
+          <p>Atomic Absorption Spectroscopy (AAS) is an analytical technique used to determine the concentration of specific metal elements in a sample by measuring the absorption of light by free atoms.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+            <div class="service-card" data-category="chemical" style="background-image: url('images/Spark\ Spectro.jpg')">
+        <div class="overlay">
+          <span>Spark Spectro</span>
+          <p>Spark Spectrochemical Analysis is a technique used to determine the elemental composition of metallic samples by exciting the surface with an electrical spark and analyzing the emitted light spectrum.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+
+      <!-- Civil NDT -->
+    <div class="service-card" data-category="civil" style="background-image: url('images/ultra_sonic.jfif')">
+        <div class="overlay">
+          <span>Rebound Hammer Test</span>
+          <p>Rebound Hammer Test</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="service-card" data-category="civil" style="background-image: url('images/visual_testing.jpg')">
+        <div class="overlay">
+          <span>Ultrasonic Pulse Velocity Test</span>
+          <p>Ultrasonic Pulse Velocity Test.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="service-card" data-category="civil" style="background-image: url('images/pmi.jpg')">
+        <div class="overlay">
+          <span>Cover Meter Test</span>
+          <p>Cover Meter Test.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="civil" style="background-image: url('images/pmi.jpg')">
+        <div class="overlay">
+          <span>Half Cell Potential Testing </span>
+          <p>Half Cell Potential Testing.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+            <div class="service-card" data-category="civil" style="background-image: url('images/pmi.jpg')">
+        <div class="overlay">
+          <span>Carbonation Depth Measurement</span>
+          <p>Carbonation Depth Measurement</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+            <div class="service-card" data-category="civil" style="background-image: url('images/pmi.jpg')">
+        <div class="overlay">
+          <span>Core Extraction & Compression Test</span>
+          <p>Core Extraction & Compression Test</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- More Services Buttons per Category -->
+    <div class="more-services-btn-container">
+      <a href="ndt.html" class="more-services-btn" data-category="ndt" style="display: block;">More NDT Services</a>
+      <a href="mechanical.html" class="more-services-btn" data-category="mechanical" style="display: none;">More Mechanical Services</a>
+      <!-- <a href="chemical.html" class="more-services-btn" data-category="chemical" style="display: none;">More Chemical Analysis</a> -->
+      <a href="civil.html" class="more-services-btn" data-category="civil" style="display: none;">More Civil NDT Services</a>
+    </div>
+  </section>
+
+<section class="ndt-analytics-section">
+  <div class="analytics-container">
+    <h2 class="analytics-title">Analytics of <span>NDT Services</span></h2>
+
+    <div id="analytics-cards" class="analytics-cards">
+      <!-- Cards will be inserted here by JS -->
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/about.png" alt="About NDT Metallurgical Services" />
+      </div>
+      <div class="about-content">
+       <h2>
+  <span style="color: #3c28a0; font-size: 24px; font-family: 'Poppins', sans-serif;">About</span> 
+  <span style="color: #f37c00; font-size: 36px; font-family: 'Poppins', sans-serif;">Us</span>
+</h2>
+
+        <p>
+          At NDT Metallurgical Services, we specialize in providing reliable and advanced Non-Destructive Testing (NDT) solutions. With a team of certified professionals and cutting-edge technology, we deliver precise and efficient testing services to support safety and quality in critical industries.
+        </p>
+        <p>
+          Our mission is to uphold the highest standards of service and integrity, ensuring our clients' success in every inspection project.
+        </p>
+        <a href="#contact" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-section" id="contact">
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019803043258!2d144.96305761531552!3d-37.81627997975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f9e8fb%3A0xf3c9f0e747bd3d2a!2sFederation%20Square!5e0!3m2!1sen!2sin!4v1623327704793!5m2!1sen!2sin" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@ndtmetallurgical.com</p>
+        <p>Phone: +91-98765-43210</p>
+        <p>Location: Hyderabad, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 NDT Metallurgical Services. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scroll Shrink Header Script -->
+  <script>
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function handleScroll() {
+      const header = document.querySelector("header");
+      const topInfoBar = document.querySelector(".top-info-bar");
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > 50) {
+        header.classList.add("shrink");
+        topInfoBar.classList.toggle("hide", currentScroll > lastScrollY);
+      } else {
+        header.classList.remove("shrink");
+        topInfoBar.classList.remove("hide");
+      }
+
+      lastScrollY = currentScroll;
+      ticking = false;
+    }
+
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    });
+  </script>
+
+  <!-- Tab Filter Script -->
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const serviceCards = document.querySelectorAll(".service-card");
+    const moreServiceLinks = document.querySelectorAll(".more-services-btn");
+
+    function filterCategory(category) {
+      serviceCards.forEach(card => {
+        card.style.display = card.getAttribute("data-category") === category ? "block" : "none";
+      });
+
+      moreServiceLinks.forEach(link => {
+        link.style.display = link.getAttribute("data-category") === category ? "block" : "none";
+      });
+    }
+
+    tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        const selectedCategory = button.getAttribute("data-category");
+        filterCategory(selectedCategory);
+      });
+    });
+
+    // Default state
+    filterCategory("ndt");
+  </script>
+<script>
+  var swiper = new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  const sheetCSVUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVhtGagWaaGghRcVniS2TLlQRZuimbRPUzYBvY7fmHMZULScu6r3Tqt4DOkjAe4juIAQ7ODC4_AHsd/pub?output=csv";
+
+  function animateValue(el, end, duration = 2000) {
+    let start = 0;
+    const isNumber = !isNaN(end);
+    const suffix = isNumber ? "" : end.replace(/[0-9]/g, '');
+    const target = isNumber ? parseFloat(end) : parseFloat(end);
+
+    const stepTime = Math.abs(Math.floor(duration / target));
+    const startTime = performance.now();
+
+    function update(currentTime) {
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const value = Math.floor(progress * target);
+      el.textContent = isNumber ? `${value}${suffix}` : end;
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = end;
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  fetch(sheetCSVUrl)
+    .then(res => res.text())
+    .then(csv => {
+      const rows = csv.trim().split('\n').slice(1); // skip header
+      const container = document.getElementById('analytics-cards');
+      container.innerHTML = '';
+
+      rows.forEach((row, i) => {
+        const [metric, value] = row.split(',');
+
+        const card = document.createElement('div');
+        card.className = "card";
+
+        const h3 = document.createElement('h3');
+        h3.textContent = "0";
+
+        const p = document.createElement('p');
+        p.textContent = metric.trim();
+
+        card.appendChild(h3);
+        card.appendChild(p);
+        container.appendChild(card);
+
+        // Animate value
+        animateValue(h3, value.trim());
+      });
+    })
+    .catch(error => {
+      console.error("❌ Failed to fetch analytics:", error);
+    });
+</script>
+<div id="overlay" onclick="closePopup()"></div>
+
+<div id="popup">
+  <h3>Enter Report Number</h3>
+  <input type="text" id="reportInput" placeholder="e.g. NDT-001" />
+  <button onclick="checkReport()">Check</button>
+  <div id="result" style="margin-top:10px;"></div>
+</div>
+
+
+
+
+
+<script>
+  const verificationSheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVhtGagWaaGghRcVniS2TLlQRZuimbRPUzYBvY7fmHMZULScu6r3Tqt4DOkjAe4juIAQ7ODC4_AHsd/pub?gid=520585476&single=true&output=csv";
+
+  function openPopup() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('reportInput').value = '';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  function checkReport() {
+    const reportNumber = document.getElementById('reportInput').value.trim().toUpperCase();
+    if (!reportNumber) {
+      document.getElementById('result').innerHTML = "Please enter a report number.";
+      document.getElementById('result').style.color = 'red';
+      return;
+    }
+
+    fetch(verificationSheetUrl)
+      .then(res => res.text())
+      .then(csv => {
+        const rows = csv.trim().split('\n').slice(1); // Skip header
+        const found = rows.find(row => row.startsWith(reportNumber + ','));
+        const resultDiv = document.getElementById('result');
+
+        if (found) {
+          const [_, date, status] = found.split(',');
+          resultDiv.innerHTML = `<b>Status:</b> ${status}<br><b>Verified on:</b> ${date}`;
+          resultDiv.style.color = 'green';
+        } else {
+          resultDiv.innerHTML = "❌ Report number not found.";
+          resultDiv.style.color = 'red';
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById('result').innerHTML = "⚠️ Error checking report.";
+        document.getElementById('result').style.color = 'red';
+      });
+  }
+</script>
+
+</body>
+</html>
